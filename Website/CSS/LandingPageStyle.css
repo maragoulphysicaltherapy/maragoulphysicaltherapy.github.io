@@ -1,0 +1,380 @@
+@font-face 
+{
+	font-family: "Lobster";
+	src: url("../Font/LobsterTwo-Regular.otf");
+}
+@font-face 
+{
+	font-family: "Montserrat-Bold";
+	src: url("../Font/Montserrat-Bold.otf");
+}
+@font-face 
+{
+	font-family: "Montserrat";
+	src: url("../Font/Montserrat-Medium.otf");
+}
+
+*
+{
+	box-sizing: border-box;
+	vertical-align: top;
+	font-family: "Montserrat", "Lobster", "Libre Baskerville", serif, Times New Roman, Cursive, "Courier New", monospace;
+    color: #273746;
+	padding: 0.5%;
+	margin: 0.5%;
+	clear: both;
+	text-align: center;
+	display: block;
+}
+
+/* https://napacenter.org/#home */
+
+head
+{
+	display: none;
+}
+
+html, body
+{
+	background-color: #fff;
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+img
+{
+	max-width: 100%;
+	height: 100%;
+	margin: 0;
+	margin-left: auto;
+}
+
+h1
+{
+}
+
+.BoundingBox
+{
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: 	#fff;
+}
+
+.TitleBox
+{
+	text-align: left;
+	margin: 0;
+	background-size: cover;
+}
+
+.NavigationBar
+{
+	padding: 0;
+	#fff-space: nowrap;
+	font-weight: bold;
+	margin: 0;
+	/*box-shadow: 0 0 10px 0 rgb(64 64 64 / 25%);*/
+	display: none;
+
+}
+
+.HeaderBox
+{
+	background-size: cover;
+	width: 100%;
+	position: relative;
+	margin: 0;
+	display: flex;
+}
+
+.BodyBox
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.FooterBox
+{
+	background-color: #333333;
+	margin: 0;
+}
+
+.Banner
+{
+    background-image: linear-gradient(to right, #273746, #fff);
+    background-image: url("../Images/background4.jpg");
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	min-height: 300px;
+}
+
+.Banner *
+{
+	color: #fff;
+}
+
+.ColumnBox
+{
+	display: flex;
+}
+
+.Column
+{
+    padding: 0;
+    margin: 0;
+	min-height: 300px;
+}
+
+.CenterColumn
+{
+	width: 80%;
+	display: inline-block;
+}
+
+.LeftColumn
+{
+	width: 32%;
+	display: inline-block;
+	padding: 0.5%;
+	margin: 0.5%;
+}
+
+.MiddleColumn
+{
+	width: 32%;
+	display: inline-block;
+	padding: 0.5%;
+	margin: 0.5%;
+}
+
+.RightColumn
+{
+	width: 32%;
+	display: inline-block;
+	padding: 0.5%;
+	margin: 0.5%;
+}
+
+.SoloColumn
+{
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.ImageBox
+{
+	display: inline-flex;
+	position: relative;
+	max-width: 100%;
+	height: auto;
+	max-height: 450px;
+}
+
+.ImageBoxCircle
+{
+	display: inline-flex;
+	position: relative;
+	max-height: 250px;
+	border-radius: 100%;
+}
+
+.ImageBoxSmallCircle
+{
+	display: inline-flex;
+	position: relative;
+	max-height: 50px;
+	border-radius: 100%;
+}
+
+.ImageBoxTiny
+{
+	display: inline-flex;
+	position: relative;
+	max-height: 5%;
+	max-width: 5%;
+	display: none;
+}
+.ImageBoxSmall
+{
+	display: inline-flex;
+	position: relative;
+	max-height: 15%;
+}
+
+.ImageBoxSmallDuo
+{
+	display: inline-flex;
+	position: relative;
+	max-height: 100%;
+	max-width: 100%;
+	padding: 2em;
+	margin: 0;
+
+}
+
+.ImageBoxSmallDuo > img
+{
+	max-width: 50%;
+}
+.ImageBoxSmallDuo > div
+{
+	min-width: 50%;
+	max-width: 50%;
+	width: 50%;
+}
+
+
+
+.ImageBoxSmall > img
+{
+	max-width: 50%;
+	min-height: 100%;
+}
+
+.TextBox
+{
+	display: inline-flex;
+	top: 25%;
+	flex-flow: column;
+	inline-size: min-content;
+	/* width: 100%;*/
+    	/*background-image: linear-gradient(to right, #3eb8a4, #1E96A1);*/
+	margin: auto;
+	position: relative;
+}
+
+.TextBoxParagraph
+{
+	top: 25%;
+	flex-flow: column;
+	inline-size: min-content;
+	width: 100%;
+	margin: 0;
+}
+
+.TextBoxTitle
+{
+	top: 25%;
+	position: relative;
+	font-size: 3em;
+	/*white-space: nowrap;*/
+	display: block;
+	font-weight: bold;
+	/*text-align: right;
+	display: inline;*/
+}
+
+.TextBoxTitleHeader
+{
+	top: 25%;
+	position: relative;
+	font-size: 3em;
+	white-space: nowrap;
+	display: block;
+	font-weight: bold;
+	/*text-align: right;
+	display: inline;*/
+}
+
+.TextBoxTitleSmall
+{
+	top: 25%;
+	position: relative;
+	font-size: 1.5em;
+	white-space: nowrap;
+	display: inline;
+	font-weight: bold;
+	text-align: right;
+}
+
+.TextBoxPageTitle
+{
+	top: 25%;
+	position: relative;
+	font-size: 72px;
+	display: inline;
+	width: 100%;
+	font-weight: bold;
+}
+
+.TextBoxInfo
+{
+	top: 50%;
+	position: relative;
+	font-size: 1.5em;
+}
+
+.TextBoxInfoHeader
+{
+	top: 50%;
+	position: relative;
+	font-size: 1.5em;
+	text-align: right;
+}
+
+.TextBoxSmall
+{
+	top: 50%;
+	position: relative;
+	font-size: 2em;
+}
+
+.TextBoxSmall:hover
+{
+	color: #cc3366;
+	cursor: pointer;
+}
+
+.Info
+{
+	padding: 2em;
+}
+
+.Info1
+{
+	    border: #d7dbe8 1px solid;
+}
+
+.Info2
+{
+	    border: #d7dbe8 1px solid;
+}
+
+.Info3
+{
+	/*box-shadow: 0 0 400px 0 rgb(64 64 64 / 25%);*/
+	    border: #d7dbe8 1px solid;
+}
+
+#ContactForm
+{
+	background-color: #273746;
+}
+
+#ContactForm  *
+{
+    color: #fff;
+}
+
+#ContactForm  .TextBoxInfo
+{
+
+    color: #fff;
+    border-radius: 1em;
+    background-color: green;
+}
+
+#ContactForm  .TextBoxInfo:hover
+{
+
+    color: #fff;
+    border-radius: 1em;
+    background-color: orange;
+	cursor: pointer;
+}
