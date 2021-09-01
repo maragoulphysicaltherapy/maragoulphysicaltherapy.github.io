@@ -14,12 +14,19 @@
 	src: url("../Font/Montserrat-Medium.otf");
 }
 
+@font-face 
+{
+	font-family: "Jingleberry";
+	src: url("../Font/Jingleberry.otf");
+}
+
 *
 {
 	box-sizing: border-box;
 	vertical-align: top;
 	font-family: "Montserrat", "Lobster", "Libre Baskerville", serif, Times New Roman, Cursive, "Courier New", monospace;
-    color: #273746;
+    	color: #273746;
+color: #644394;
 	padding: 0.5%;
 	margin: 0.5%;
 	clear: both;
@@ -67,6 +74,7 @@ h1
 	text-align: left;
 	margin: 0;
 	background-size: cover;
+	font-family: "Jingleberry";
 }
 
 .NavigationBar
@@ -104,8 +112,8 @@ h1
 
 .Banner
 {
-    background-image: linear-gradient(to right, #273746, #fff);
-    background-image: url("../Images/background4.jpg");
+  background-image: linear-gradient(to right, #644394, #69d4e3);
+
 	background-size: cover;
 	margin: 0;
 	padding: 0;
@@ -131,6 +139,20 @@ h1
 
 .CenterColumn
 {
+	width: 80%;
+	display: inline-block;
+}
+
+.CenterColumnLeft
+{
+	float: left;
+	width: 80%;
+	display: inline-block;
+}
+
+.CenterColumnRight
+{
+	float: right;
 	width: 80%;
 	display: inline-block;
 }
@@ -192,19 +214,45 @@ h1
 	border-radius: 100%;
 }
 
-.ImageBoxTiny
-{
-	display: inline-flex;
-	position: relative;
-	max-height: 5%;
-	max-width: 5%;
-	display: none;
-}
-.ImageBoxSmall
+.ImageBoxTitle
 {
 	display: inline-flex;
 	position: relative;
 	max-height: 15%;
+	max-width: 15%;
+}
+
+.ImageBoxTiny
+{
+	display: inline-flex;
+	position: relative;
+	max-height: 10%;
+	max-width: 10%;
+}
+
+.ImageBoxSmall
+{
+	display: inline-flex;
+	position: relative;
+	max-height: 5%;
+	margin: auto;
+}
+
+
+.ImageBoxSmall
+{
+	display: inline-flex;
+	position: relative;
+	max-height: 5%;
+	margin: auto;
+}
+
+.ImageBoxSmallLeft
+{
+	display: inline-flex;
+	position: relative;
+	max-height: 5%;
+	margin: auto;
 }
 
 .ImageBoxSmallDuo
@@ -233,8 +281,14 @@ h1
 
 .ImageBoxSmall > img
 {
-	max-width: 50%;
-	min-height: 100%;
+	max-width: 25%;
+	min-height: 50%;
+}
+.ImageBoxSmallLeft > img
+{
+	max-width: 25%;
+	min-height: 50%;
+	margin-left: 0 !important;
 }
 
 .TextBox
@@ -246,6 +300,18 @@ h1
 	/* width: 100%;*/
     	/*background-image: linear-gradient(to right, #3eb8a4, #1E96A1);*/
 	margin: auto;
+	position: relative;
+}
+
+.TextBox2
+{
+	display: inline-flex;
+	top: 25%;
+	flex-flow: column;
+	inline-size: min-content;
+	width: 100%;
+    	/*background-image: linear-gradient(to right, #3eb8a4, #1E96A1);*/
+	margin-top: auto;
 	position: relative;
 }
 
@@ -268,6 +334,7 @@ h1
 	font-weight: bold;
 	/*text-align: right;
 	display: inline;*/
+	font-family: "Jingleberry";
 }
 
 .TextBoxTitleHeader
@@ -280,6 +347,7 @@ h1
 	font-weight: bold;
 	/*text-align: right;
 	display: inline;*/
+	font-family: "Jingleberry";
 }
 
 .TextBoxTitleSmall
@@ -297,11 +365,24 @@ h1
 {
 	top: 25%;
 	position: relative;
+	font-size: 96px;
+	display: inline;
+	width: 100%;
+	font-weight: bold;
+	font-family: "Jingleberry";
+}
+
+.TextBoxTitleBig
+{
+	top: 25%;
+	position: relative;
 	font-size: 72px;
 	display: inline;
 	width: 100%;
 	font-weight: bold;
+	font-family: "Jingleberry";
 }
+
 
 .TextBoxInfo
 {
